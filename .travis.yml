@@ -6,4 +6,4 @@ rvm:
   - 2.5.0
 before_install: gem install bundler -v 2.0.2
 script:
- - 'COVERAGE=true bundle exec rspec'
+ - 'bundle exec rspec'
