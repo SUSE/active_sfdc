@@ -10,7 +10,7 @@ module ActiveSfdc
       if @klass.has_attribute?(column_name) || @klass.attribute_alias?(column_name)
         @klass.arel_attribute(column_name)
       else
-        Arel.sql(column_name == :all ? "Id" : column_name.to_s)
+        Arel.sql(column_name == :all ? "" : column_name.to_s)
       end
     end
 
